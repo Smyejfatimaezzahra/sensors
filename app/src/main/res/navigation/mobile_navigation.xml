@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ensa.ma.sensors.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="ensa.ma.sensors.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="ensa.ma.sensors.ui.sensors.ListSonsorsFragment"
+        android:label="fragment_listsonsors_list"
+        tools:layout="@layout/fragment_listsonsors_list" />
+
+    <fragment
+        android:id="@+id/nav_temp"
+        android:name="ensa.ma.sensors.ui.thermometer.ThermoFragment"
+        android:label="fragment_thermo"
+        tools:layout="@layout/fragment_thermo" />
+    <fragment
+        android:id="@+id/nav_humd"
+        android:name="ensa.ma.sensors.ui.humidity.HumidityFragment"
+        android:label="fragment_humidity"
+        tools:layout="@layout/fragment_humidity" />
+    <fragment
+        android:id="@+id/nav_proximity"
+        android:name="ensa.ma.sensors.ui.proximity.ProximityFragment"
+        android:label="fragment_proximity"
+        tools:layout="@layout/fragment_proximity" />
+    <fragment
+        android:id="@+id/nav_magnetic"
+        android:name="ensa.ma.sensors.ui.magnetic.MagneticFragment"
+        android:label="fragment_magnetic"
+        tools:layout="@layout/fragment_magnetic" />
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="ensa.ma.sensors.ui.compass.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/nav_accelartion"
+        android:name="ensa.ma.sensors.ui.accelartion.Accelartion"
+        android:label="fragment_accelration"
+        tools:layout="@layout/fragment_accelartion" />
+    <fragment
+        android:id="@+id/nav_gr"
+        android:name="ensa.ma.sensors.ui.SansAcc.GravityRotation"
+        android:label="fragment_gravitAndrotation"
+        tools:layout="@layout/fragment_gravity_rotation" />
+    <fragment
+        android:id="@+id/nav_steps"
+        android:name="ensa.ma.sensors.ui.steps.Step"
+        android:label="fragment_steps"
+        tools:layout="@layout/fragment_step" />
+    <fragment
+        android:id="@+id/nav_detecte"
+        android:name="ensa.ma.sensors.beans.detecte.Detecte"
+        android:label="fragment_actvities"
+        tools:layout="@layout/fragment_detecte" />
+</navigation>
